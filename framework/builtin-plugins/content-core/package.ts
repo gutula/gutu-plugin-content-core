@@ -5,6 +5,12 @@ export default definePackage({
   kind: "app",
   version: "0.1.0",
   displayName: "Content Core",
+  defaultCategory: {
+    id: "content_experience",
+    label: "Content & Experience",
+    subcategoryId: "content_management",
+    subcategoryLabel: "Content Management"
+  },
   description: "Pages, posts, and content type backbone.",
   extends: [],
   dependsOn: ["auth-core","org-tenant-core","role-policy-core","audit-core"],
